@@ -1,0 +1,38 @@
+.index-table {
+    max-width: 1000px;
+    margin-inline: 8px;
+
+    td, th {
+        background: transparent;
+    }
+
+    th {
+        border: 1px solid #565656;
+        text-align: center;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #565656;
+            border-top: none;
+            cursor: pointer;
+    
+            &:nth-child(even) {
+                background: #1d2021;
+            }
+            &:nth-child(odd) {
+                background: #181a1b;
+            }
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+
+    thead {
+        tr{
+            border-radius: 5px;
+            background-color: #1d2021;
+        }
+    }
+}

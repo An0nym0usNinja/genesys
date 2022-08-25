@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout.dark');
 });
+
+Route::resource('archetypes', App\Http\Controllers\ArchetypeController::class);
