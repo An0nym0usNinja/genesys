@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('archetypes', App\Http\Controllers\ArchetypeController::class);
+Route::resource('characteristics', App\Http\Controllers\CharacteristicController::class);

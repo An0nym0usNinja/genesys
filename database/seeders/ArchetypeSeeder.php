@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Archetype;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ArchetypeSeeder extends Seeder
