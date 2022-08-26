@@ -2,6 +2,10 @@
 
 @section('content')
 
+    <section class="align-center">
+        <h1 class="text-neon-blue">{{$heading}}</h1>
+    </section>
+
     <section class="align-right">
         <a href="" class="btn-action btn-action-md">
             <img src="{{asset('icons/add.png')}}" alt="">
@@ -17,14 +21,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($archetypes as $archetype)
+                @foreach ($items as $item)
                     <tr>
-                        <td>{{$archetype->name}}</td>
+                        <td>{{$item->name}}</td>
                         <td class="text-center">
-                            <a href="" class="btn-action btn-action-sm">
+                            <a href="{{route($route.'.edit', $item->id)}}" class="btn-action btn-action-sm">
                                 <img src="{{asset('icons/edit.png')}}" alt="">
                             </a>
-                            <a href="" class="btn-action btn-action-sm">
+                            <a href="{{route($route.'.destroy', $item->id)}}" class="btn-action btn-action-sm">
                                 <img src="{{asset('icons/delete.png')}}" alt="">
                             </a>
                         </td>

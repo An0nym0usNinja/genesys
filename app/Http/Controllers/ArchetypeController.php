@@ -15,8 +15,10 @@ class ArchetypeController extends Controller
     public function index()
     {
         $archetypes = Archetype::all();
-        return view('archetypes.index')->with([
-            'archetypes' => $archetypes,
+        return view('templates.index')->with([
+            'items' => $archetypes,
+            'heading' => "Archetypes",
+            'route' => "archetypes",
         ]);
     }
 
