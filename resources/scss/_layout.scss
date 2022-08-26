@@ -9,5 +9,12 @@ body {
 .content {
     margin-top: 5rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    max-width: 1000px;
+    margin-inline: 8px;
+    width: 100%;
+    margin-bottom: 1rem;
 }

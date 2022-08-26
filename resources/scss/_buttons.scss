@@ -1,0 +1,40 @@
+.btn-primary {
+    background: #1D2021;
+    border: 1px solid #565656;
+    color: #DDDDDD;
+    border-radius: 3px;
+    transition: .1s border-color ease-in-out;
+    text-transform: uppercase;
+    color: #17c0f1;
+    outline: none;
+    &:hover {
+        border-color: #17c0f1;
+        background: #323231;
+        color: #17c0f1;
+        outline: none;
+    }
+    &:focus {
+        border-color: #17c0f1;
+        background: #323231;
+        color: #17c0f1;
+        outline: none;
+        box-shadow: none;
+    }
+}
+.btn-action {
+    text-decoration: none;
+    padding-inline: 5px;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.btn-action-sm {
+    img {
+        max-height: 20px;
+    }
+}
+.btn-action-md {
+    img {
+        max-height: 50px;
+    }
+}
