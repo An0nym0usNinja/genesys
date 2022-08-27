@@ -1,0 +1,41 @@
+.modal-content {
+    background: #181a1b;
+}
+.modal-header {
+    border-bottom: 1px solid #565656;
+}
+.modal-footer {
+    border-top: 1px solid #565656;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-link.active {
+    background: transparent;
+    color: #17c0f1;
+    border: 1px solid #17c0f1;
+    border-radius: 5px;
+
+    &:hover {
+        border: 1px solid #17c0f1;
+        background: transparent;
+    }
+}
+.nav-tabs .nav-link {
+    background: transparent;
+    color: #17c0f1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    &:hover {
+        border: 1px solid #565656;
+        background: #323231;
+    }
+}
+nav {
+    margin-bottom: 15px;
+}
+.item-description {
+    color: #DDDD;
+    font-size: 15px;
+}

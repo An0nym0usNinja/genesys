@@ -51,7 +51,7 @@ class CharacteristicController extends Controller
      */
     public function show($id)
     {
-        //
+        //being done on modal on index page
     }
 
     /**

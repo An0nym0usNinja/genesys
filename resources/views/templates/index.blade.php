@@ -21,19 +21,24 @@
             </thead>
             <tbody>
                 @foreach ($items as $item)
-                    <tr onclick="showItem('{{$item->id}}')">
+
+                    <tr data-bs-toggle="modal" data-bs-target="#itemShowModal{{$item->id}}">
                         <td>{{ $item->name }}</td>
                         <td class="text-center">
                             <a href="{{ route($route . '.edit', $item->id) }}" class="btn-action btn-action-sm">
                                 <img src="{{ asset('icons/edit.png') }}" alt="">
                             </a>
-                            <a href="{{ route($route . '.destroy', $item->id) }}" class="btn-action btn-action-sm">
+                            <a href="#" class="btn-action btn-action-sm" data-bs-toggle="modal" data-bs-target="#itemDeleteModal{{$item->id}}">
                                 <img src="{{ asset('icons/delete.png') }}" alt="">
                             </a>
                         </td>
                     </tr>
+
+                    @include($route.'.show-modal')
+                    @include('templates.delete-modal')
                 @endforeach
             </tbody>
         </table>
     </section>
+
 @endsection

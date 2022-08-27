@@ -21,6 +21,29 @@
         box-shadow: none;
     }
 }
+.btn-delete {
+    background: #1D2021;
+    border: 1px solid #565656;
+    color: #DDDDDD;
+    border-radius: 3px;
+    transition: .1s border-color ease-in-out;
+    text-transform: uppercase;
+    color: #fc0005;
+    outline: none;
+    &:hover {
+        border-color: #fc0005;
+        background: #323231;
+        color: #fc0005;
+        outline: none;
+    }
+    &:focus {
+        border-color: #fc0005;
+        background: #323231;
+        color: #fc0005;
+        outline: none;
+        box-shadow: none;
+    }
+}
 .btn-action {
     text-decoration: none;
     padding-inline: 5px;
@@ -36,5 +59,19 @@
 .btn-action-md {
     img {
         max-height: 50px;
+    }
+}
+.btn-close {
+    background: transparent url(https://genesys.localhost/icons/close.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &:hover {
+        opacity: 1;
     }
 }
