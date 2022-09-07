@@ -85,6 +85,12 @@ class CharacteristicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $characteristic = Characteristic::find($id);
+        if (!empty($characteristic)) {
+            $characteristic->delete();
+            return redirect()->route('characteristics.index');
+        } else {
+            return redirect()->back();
+        }
     }
 }

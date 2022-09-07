@@ -28,7 +28,7 @@ class ArchetypeSeeder extends Seeder
                 'strain_threshold' => $archetype['strain_threshold'],
                 'starting_experience' => $archetype['starting_experience'],
                 'special_abilities' => $archetype['special_abilities'],
-                'other_abilities' => json_encode($archetype['other_abilities']),
+                'other_abilities_json' => json_encode($archetype['other_abilities']),
                 'description' => $archetype['description'],
             ]);
         }

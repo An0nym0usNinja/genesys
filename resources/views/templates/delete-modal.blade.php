@@ -9,9 +9,11 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
-                <a href="{{ route($route . '.destroy', $item->id) }}" class="btn btn-delete">
-                    Delete
-                </a>
+                <form action="{{ route($route . '.destroy', $item->id) }}" method="POST" >
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-delete" type="submit">Delete</button>
+                </form>
             </div>
         </div>
     </div>

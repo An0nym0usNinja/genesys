@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('strain_threshold');
             $table->string('starting_experience');
             $table->text('special_abilities');
-            $table->text('other_abilities');
+            $table->text('other_abilities_json');
             $table->text('description');
             $table->string('image_url')->nullable()->default(null);
             $table->timestamps();

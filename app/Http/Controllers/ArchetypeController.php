@@ -85,6 +85,12 @@ class ArchetypeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $archetype = Archetype::find($id);
+        if (!empty($archetype)) {
+            $archetype->delete();
+            return redirect()->route('archetypes.index');
+        } else {
+            return redirect()->back();
+        }
     }
 }

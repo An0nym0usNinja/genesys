@@ -1,0 +1,16 @@
+.blue-dots {
+    list-style: none;
+
+    li {
+        &::before {
+            content: "";
+            background-color: #17c0f1;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            transform: translate(-12px, 225%);
+        }
+    }
+
+}
